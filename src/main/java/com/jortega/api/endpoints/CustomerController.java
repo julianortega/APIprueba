@@ -1,7 +1,5 @@
 package com.jortega.api.endpoints;
 
-import org.springframework.web.bind.annotation.RestController;
-
 import com.jortega.api.database.CustomerRepository;
 import com.jortega.api.exceptions.NonUniqueValueException;
 import com.jortega.api.exceptions.NotFoundException;
@@ -13,6 +11,7 @@ import java.util.List;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
 @RestController
 public class CustomerController {
 	

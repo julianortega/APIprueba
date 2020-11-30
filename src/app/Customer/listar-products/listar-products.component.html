@@ -1,0 +1,27 @@
+<div class="container">
+	<div class="card">
+		<div class="card-header">
+			<h3>Productos</h3>
+		</div>
+		<div class="card-body">
+			<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>Nombre</th>
+					<th>Tipo</th>
+					<th>Num. Terminal</th>
+					<th>Fecha venta</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr *ngFor="let product of products" class="text-center">
+					<td>{{product.productName}}</td>
+					<td>{{product.productTypeName}}</td>
+					<td>{{product.numeracioTerminal}}</td>
+					<td>{{product.soldAt}}</td>
+				</tr>
+			</tbody>
+			</table>
+		</div>
+	</div>
+</div>
